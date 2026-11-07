@@ -1,0 +1,538 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff6f2">
+  <meta name="description" content="Conoce CHIKAWA ARENA, un torneo de personajes kawaii en un coliseo medieval.">
+  <title>ARENA CHIKAWA</title>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!-- Estilos y funciones -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+<a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+<!-- Navegación principal -->
+<header class="topbar">
+  <div class="wrap nav-wrap">
+    <a class="brand" href="#inicio">
+      <img class="brand-logo" src="assets/logo-chikawa.svg" alt="Logo de CHIKAWA ARENA">
+      <span>ARENA <em>CHIKAWA</em></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false">☰</button>
+
+    <nav id="site-nav" aria-label="Navegación principal">
+      <a href="#historia">El juego</a>
+      <a href="#experiencia">Mecánicas</a>
+      <a href="#reglas">Reglas</a>
+      <a href="#controles">Controles</a>
+      <a href="#galeria">Galería</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#redes">Redes</a>
+    </nav>
+
+    <a class="nav-cta" href="#galeria">VER AVANCES ↗</a>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- Presentación del videojuego -->
+  <section class="hero wrap">
+    <div class="window hero-intro reveal">
+      <div class="window-bar">
+        <div class="window-dots"><i></i><i></i><i></i></div>
+        <small>arena_chikawa.exe</small>
+      </div>
+
+      <div class="window-body">
+        <span class="pill">✦ PROYECTO DE VIDEOJUEGO · UNREAL ENGINE</span>
+
+        <h1>ARENA<br><span>CHIKAWA</span></h1>
+
+        <p class="lead">
+          ¡Pequeños guerreros, grandes batallas!
+          Descubre un torneo en las ruinas de un reino medieval,
+          donde adorables personajes compiten por convertirse en campeones.
+        </p>
+
+        <div class="actions">
+          <a class="button primary" href="#historia">CONOCE EL JUEGO ✿</a>
+          <a class="button secondary" href="#galeria">VER CAPTURAS ↗</a>
+        </div>
+
+        <div class="tags">
+          <span>♡ COMBATE</span>
+          <span>⚔ MEDIEVAL</span>
+          <span>✦ MULTIJUGADOR</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Imagen principal de los personajes -->
+    <div class="window hero-visual reveal">
+      <div class="window-bar blue">
+        <div class="window-dots"><i></i><i></i><i></i></div>
+        <small>chikawitas.jpg</small>
+      </div>
+
+      <div class="hero-picture">
+        <img
+          src="assets/chikawitas.jpg"
+          alt="Personajes kawaii dentro del coliseo de CHIKAWA ARENA"
+          fetchpriority="high"
+        >
+        <div class="picture-label">✿ UN MUNDO ESPECIAL Y ÉPICO</div>
+      </div>
+    </div>
+
+    <span class="hero-deco deco-one" aria-hidden="true">✳</span>
+    <span class="hero-deco deco-two" aria-hidden="true">♡</span>
+  </section>
+
+  <!-- Cinta decorativa -->
+  <div class="ticker" aria-hidden="true">
+    <div>
+      ✿ CHIKAWA ARENA &nbsp; ✦ TORNEO MEDIEVAL &nbsp; ♡ ARENA CHIKAWA &nbsp;
+      ✿ CHIKAWA ARENA &nbsp; ✦ TORNEO MEDIEVAL &nbsp; ♡ ARENA CHIKAWA &nbsp;
+      ✿ CHIKAWA ARENA &nbsp; ✦ TORNEO MEDIEVAL &nbsp; ♡ ARENA CHIKAWA
+    </div>
+  </div>
+
+  <!-- Información general del juego -->
+  <section id="historia" class="section wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">01 / SOBRE EL JUEGO</span>
+      <h2>Una arena medieval, <span class="highlight">mucho encanto</span></h2>
+      <p>La ternura de los personajes se encuentra con la emoción de un torneo de combate.</p>
+    </div>
+
+    <div class="split">
+      <div class="notebook reveal">
+        <span class="notebook-sticker">🌸</span>
+        <h3>¿Qué es ARENA CHIKAWA?</h3>
+
+        <p>
+          Un videojuego competitivo ambientado en las ruinas de un antiguo reino.
+          Los jugadores recorren un coliseo de estilo medieval, se enfrentan
+          en rondas y utilizan armas y mejoras temporales para buscar la victoria.
+        </p>
+
+        <ul class="star-list">
+          <li>Personajes de apariencia unica.</li>
+          <li>Coliseo tridimensional con gradas y estructuras antiguas.</li>
+          <li>Armas, objetos y power-ups dentro de la arena.</li>
+          <li>Partidas donde importan la vida, el tiempo y la puntuación.</li>
+        </ul>
+      </div>
+
+      <!-- Vista general del escenario -->
+      <figure class="image-card reveal">
+        <img
+          src="assets/escenario-completo.jpg"
+          alt="Vista superior del coliseo y su área de combate"
+          loading="lazy"
+        >
+        <figcaption>✦ ESCENARIO REAL DEL PROYECTO</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Mecánicas principales -->
+  <section id="experiencia" class="section lavender-band">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">02 / MECÁNICAS</span>
+        <h2>Tu aventura dentro de la <span class="highlight">arena</span></h2>
+        <p>Las acciones y sistemas definidos en la propuesta de CHIKAWA ARENA.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <span class="feature-icon">🏃</span>
+          <h3>Explora y muévete</h3>
+          <p>Camina, corre y salta para desplazarte por las distintas zonas del escenario.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <span class="feature-icon">⚔️</span>
+          <h3>Combate</h3>
+          <p>Ataca con tu arma equipada y alterna entre dos armas según la situación.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <span class="feature-icon">✨</span>
+          <h3>Power-ups</h3>
+          <p>Recoge ventajas temporales, como mejoras de empuje o de salto.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <span class="feature-icon">🏆</span>
+          <h3>Busca la victoria</h3>
+          <p>Reduce la vida de tus rivales o consigue una mayor puntuación al finalizar el tiempo.</p>
+        </article>
+      </div>
+
+      <!-- Avance de personajes -->
+      <div class="showcase reveal">
+        <img
+          src="assets/chikawitas.jpg"
+          alt="Personajes kawaii implementados dentro de la arena"
+          loading="lazy"
+        >
+
+        <div>
+          <span class="pill">✦ DESARROLLO EN PROGRESO</span>
+          <h3>Del concepto a la partida</h3>
+          <p>
+            Las capturas muestran el desarrollo real en Unreal Engine:
+            escenario, personajes, efectos y pruebas dentro de la arena.
+          </p>
+          <a class="text-link" href="#galeria">Explorar el desarrollo →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reglamento del torneo -->
+  <section id="reglas" class="section wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">03 / REGLAMENTO</span>
+      <h2>Reglas para <span class="highlight">entrar al torneo</span></h2>
+      <p>Resumen de las reglas y condiciones de victoria del juego.</p>
+    </div>
+
+    <div class="notes">
+      <article class="note pink reveal">
+        <b>01</b>
+        <h3>Tiempo de ronda</h3>
+        <p>Las rondas duran 3 minutos, según la propuesta del juego.</p>
+      </article>
+
+      <article class="note lilac reveal">
+        <b>02</b>
+        <h3>Mismas oportunidades</h3>
+        <p>Todos los jugadores comienzan con la misma cantidad de vida.</p>
+      </article>
+
+      <article class="note blue reveal">
+        <b>03</b>
+        <h3>Armas y ataques</h3>
+        <p>Puedes utilizar dos armas; los ataques acertados reducen la vida rival y otorgan puntos.</p>
+      </article>
+
+      <article class="note yellow reveal">
+        <b>04</b>
+        <h3>Dentro de la arena</h3>
+        <p>Permanece en el área de combate y aprovecha los power-ups del escenario.</p>
+      </article>
+
+      <article class="note mint reveal">
+        <b>05</b>
+        <h3>¿Quién gana?</h3>
+        <p>Vence quien elimine al oponente o lidere la puntuación cuando termine el tiempo.</p>
+      </article>
+    </div>
+
+    <p class="fine-print">
+      También se contempla la derrota por caída fuera de la plataforma.
+    </p>
+  </section>
+
+  <!-- Guía de controles -->
+  <section id="controles" class="section sky-band">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">04 / GUÍA RÁPIDA</span>
+        <h2>Aprende los <span class="highlight">controles</span></h2>
+        <p>Conoce las teclas previstas en el diseño del juego.</p>
+      </div>
+
+      <div class="controls-layout">
+        <div class="window reveal">
+          <div class="window-bar">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <small>controles.txt</small>
+          </div>
+
+          <div class="controls-grid">
+            <div>
+              <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd>
+              <span>Movimiento</span>
+            </div>
+
+            <div><kbd>SHIFT</kbd><span>Correr</span></div>
+            <div><kbd>ESPACIO</kbd><span>Saltar</span></div>
+            <div><kbd>CLIC IZQ.</kbd><span>Ataque básico</span></div>
+            <div><kbd>X</kbd><span>Ataque fuerte</span></div>
+            <div><kbd>1</kbd> <kbd>2</kbd><span>Cambiar armas</span></div>
+            <div><kbd>E</kbd><span>Recoger objetos</span></div>
+            <div><kbd>ESC</kbd><span>Menú de pausa</span></div>
+          </div>
+        </div>
+
+        <div class="control-side reveal">
+          <!-- Tarjeta con movimiento interactivo -->
+          <div class="window mouse-tip">
+            <div class="window-bar pink-bar">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <small>tip_del_día.txt</small>
+            </div>
+
+            <div class="window-body">
+              <span class="mouse-playground" aria-hidden="true">
+                <span class="mouse-figure">
+                  <svg viewBox="0 0 48 64" width="48" height="64" fill="none">
+                    <rect x="7" y="3" width="34" height="55" rx="17"
+                      fill="#e8dcff" stroke="#42384f" stroke-width="3"/>
+                    <path d="M24 5v17" stroke="#42384f" stroke-width="3"/>
+                    <rect x="21" y="13" width="6" height="13" rx="3"
+                      fill="#ff87b2"/>
+                  </svg>
+                </span>
+
+                <span class="mouse-trail">✦</span>
+              </span>
+
+              <h3>¡Mira a tu alrededor!</h3>
+              <p>
+                Utiliza el movimiento del ratón para controlar la cámara
+                mientras recorres el coliseo.
+              </p>
+            </div>
+          </div>
+
+          <!-- Prueba de juego multijugador -->
+          <img
+            src="assets/pantallaEn3.jpg"
+            alt="Prueba de varios personajes conectados dentro del videojuego"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería de capturas reales -->
+  <section id="galeria" class="section wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">05 / DETRÁS DE ESCENA</span>
+      <h2>Capturas reales de <span class="highlight">CHIKAWA ARENA</span></h2>
+      <p>Explora el escenario, los personajes y las pruebas del videojuego.</p>
+    </div>
+
+    <!-- Filtros de imágenes -->
+    <div class="gallery-filters reveal" role="group" aria-label="Filtrar galería">
+      <button class="filter active" data-filter="all" aria-pressed="true">Todas</button>
+      <button class="filter" data-filter="escenario" aria-pressed="false">Escenario</button>
+      <button class="filter" data-filter="personajes" aria-pressed="false">Personajes</button>
+      <button class="filter" data-filter="desarrollo" aria-pressed="false">Desarrollo</button>
+    </div>
+
+    <div class="gallery-grid">
+
+      <!-- Coliseo principal -->
+      <button class="gallery-item wide reveal"
+        data-kind="escenario"
+        data-full="assets/coliseo.jpg"
+        data-caption="Arquitectura del coliseo medieval">
+        <img src="assets/coliseo.jpg"
+          alt="Vista del coliseo medieval" loading="lazy">
+        <span>Coliseo medieval ↗</span>
+      </button>
+
+      <!-- Personajes kawaii -->
+      <button class="gallery-item reveal"
+        data-kind="personajes"
+        data-full="assets/chikawitas.jpg"
+        data-caption="Personajes kawaii dentro de la arena">
+        <img src="assets/chikawitas.jpg"
+          alt="Personajes kawaii" loading="lazy">
+        <span>Personajes kawaii ↗</span>
+      </button>
+
+      <!-- Vista superior -->
+      <button class="gallery-item reveal"
+        data-kind="escenario"
+        data-full="assets/escenario-completo.jpg"
+        data-caption="Vista general del coliseo">
+        <img src="assets/escenario-completo.jpg"
+          alt="Vista superior del coliseo" loading="lazy">
+        <span>Escenario completo ↗</span>
+      </button>
+
+      <!-- Vista frontal del escenario -->
+      <button class="gallery-item reveal"
+        data-kind="escenario"
+        data-full="assets/escenario-completo-v.jpg"
+        data-caption="Vista del interior del escenario medieval">
+        <img src="assets/escenario-completo-v.jpg"
+          alt="Vista interior de la arena" loading="lazy">
+        <span>Interior de la arena ↗</span>
+      </button>
+
+      <!-- Prueba de varios jugadores -->
+      <button class="gallery-item reveal"
+        data-kind="desarrollo"
+        data-full="assets/pantallaEn3.jpg"
+        data-caption="Prueba de múltiples personajes en Unreal Engine">
+        <img src="assets/pantallaEn3.jpg"
+          alt="Prueba multijugador en Unreal Engine" loading="lazy">
+        <span>Pruebas multijugador ↗</span>
+      </button>
+
+      <!-- Objeto de prueba -->
+      <button class="gallery-item reveal"
+        data-kind="desarrollo"
+        data-full="assets/control.jpg"
+        data-caption="Elemento del juego en desarrollo">
+        <img src="assets/control.jpg"
+          alt="Objeto en desarrollo dentro de la arena" loading="lazy">
+        <span>Objetos y efectos ↗</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Integrantes del proyecto -->
+  <section id="equipo" class="section peach-band">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">06 / CRÉDITOS</span>
+        <h2>El equipo detrás de <span class="highlight">la arena</span></h2>
+        <p>Un proyecto que combina diseño, programación y creatividad.</p>
+      </div>
+
+      <div class="window team-window reveal">
+        <div class="window-bar pink-bar">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <small>equipo_chikawa.txt</small>
+        </div>
+
+        <div class="team-list">
+          <span>✿ Doria Castañeda</span>
+          <span>✿ Alan Correa</span>
+          <span>✿ Fátima Salazar</span>
+          <span>✿ Miguel Álvarez</span>
+          <span>✿ Ximena Orozco</span>
+        </div>
+
+        <p class="team-note">Proyecto en desarrollo</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Redes sociales -->
+  <section id="redes" class="section wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">07 / COMUNIDAD</span>
+      <h2>Sigue la <span class="highlight">aventura</span></h2>
+      <p>Próximamente compartiremos novedades y avances de CHIKAWA ARENA.</p>
+    </div>
+
+    <div class="social-grid">
+
+      <!-- Publicación de Instagram -->
+      <article class="social-post reveal">
+        <div class="social-post-head">
+          <img src="assets/logo-chikawa.svg" alt="" class="social-avatar">
+          <div>
+            <strong>CHIKAWA ARENA</strong>
+            <span>Instagram · Próximamente</span>
+          </div>
+          <span aria-hidden="true">♡</span>
+        </div>
+
+        <img class="social-post-photo"
+          src="assets/chikawitas.jpg"
+          alt="Personajes kawaii de CHIKAWA ARENA"
+          loading="lazy">
+
+        <div class="social-post-body">
+          <div class="social-symbols" aria-hidden="true">♡　♧　✦</div>
+          <p>
+            <strong>¡Bienvenidos a la arena!</strong>
+            Conoce a nuestros pequeños guerreros y descubre
+            cómo avanza el desarrollo del videojuego.
+          </p>
+          <span class="social-coming">Perfil oficial pendiente de publicar</span>
+        </div>
+      </article>
+
+      <!-- Publicación de X -->
+      <article class="social-post reveal">
+        <div class="social-post-head">
+          <img src="assets/logo-chikawa.svg" alt="" class="social-avatar">
+          <div>
+            <strong>ARENA CHIKAWA</strong>
+            <span>X · Próximamente</span>
+          </div>
+          <span aria-hidden="true">✧</span>
+        </div>
+
+        <img class="social-post-photo"
+          src="assets/escenario-completo.jpg"
+          alt="Vista general del coliseo medieval"
+          loading="lazy">
+
+        <div class="social-post-body">
+          <div class="social-symbols" aria-hidden="true">✦　↗　♡</div>
+          <p>
+            <strong>Diario de desarrollo:</strong>
+            estamos construyendo una arena medieval
+            para combates entre personajes kawaii.
+          </p>
+          <span class="social-coming">Perfil oficial pendiente de publicar</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Pie de página -->
+<footer class="footer">
+  <div class="wrap footer-layout">
+    <div>
+      <a class="brand" href="#inicio">
+        <img class="brand-logo"
+          src="assets/logo-chikawa.svg"
+          alt="Logo de CHIKAWA ARENA">
+        <span>CHIKAWA <em>ARENA</em></span>
+      </a>
+      <p>El torneo más tierno del reino te espera. ♡</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#historia">Sobre el juego</a>
+      <a href="#reglas">Reglas</a>
+      <a href="#controles">Controles</a>
+      <a href="#galeria">Capturas</a>
+      <a href="#redes">Redes sociales</a>
+    </div>
+  </div>
+
+  <div class="wrap copyright">
+    © <span id="year"></span> CHIKAWA ARENA · Proyecto académico en desarrollo
+  </div>
+</footer>
+
+<!-- Visor para ampliar fotografías -->
+<dialog class="lightbox" aria-label="Imagen ampliada del juego">
+  <button class="lightbox-close" aria-label="Cerrar imagen">✕</button>
+  <img alt="">
+  <p></p>
+</dialog>
+
+</body>
+</html>
